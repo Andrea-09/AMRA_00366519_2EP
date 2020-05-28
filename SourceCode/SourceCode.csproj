@@ -83,6 +83,18 @@
     <Compile Include="AddBusiness.Designer.cs">
       <DependentUpon>AddBusiness.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddDir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddDir.Designer.cs">
+      <DependentUpon>AddDir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddressA.cs" />
     <Compile Include="AddressDAO.cs" />
     <Compile Include="Business.cs" />
@@ -99,12 +111,37 @@
     <Compile Include="CreateUser.Designer.cs">
       <DependentUpon>CreateUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteBusiness.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeleteBusiness.Designer.cs">
+      <DependentUpon>DeleteBusiness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteDir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeleteDir.Designer.cs">
+      <DependentUpon>DeleteDir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeleteProduct.Designer.cs">
+      <DependentUpon>DeleteProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeleteUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DeleteUser.Designer.cs">
       <DependentUpon>DeleteUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModDir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModDir.Designer.cs">
+      <DependentUpon>ModDir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoRestaurantSelected.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="PedidoDAO.cs" />
     <Compile Include="Product.cs" />
@@ -141,11 +178,26 @@
     <EmbeddedResource Include="AddBusiness.resx">
       <DependentUpon>AddBusiness.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddDir.resx">
+      <DependentUpon>AddDir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChangePssw.resx">
       <DependentUpon>ChangePssw.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateUser.resx">
       <DependentUpon>CreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteBusiness.resx">
+      <DependentUpon>DeleteBusiness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteDir.resx">
+      <DependentUpon>DeleteDir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteProduct.resx">
+      <DependentUpon>DeleteProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteUser.resx">
       <DependentUpon>DeleteUser.cs</DependentUpon>
@@ -155,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminWindow.resx">
       <DependentUpon>AdminWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModDir.resx">
+      <DependentUpon>ModDir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserAdmin.resx">
       <DependentUpon>UserAdmin.cs</DependentUpon>

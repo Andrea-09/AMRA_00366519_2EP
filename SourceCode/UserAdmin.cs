@@ -27,6 +27,7 @@ namespace SourceCode
             tableLayoutPanel1.Controls.Remove(current);
             current = new CreateUser();
             tableLayoutPanel1.Controls.Add(current, 0, 1);
+            tableLayoutPanel1.SetRowSpan(current, 3);
             tableLayoutPanel1.SetColumnSpan(current, 4);
 
         }
@@ -36,6 +37,7 @@ namespace SourceCode
             tableLayoutPanel1.Controls.Remove(current);
             current = new ChangePssw(use);
             tableLayoutPanel1.Controls.Add(current, 0, 1);
+            tableLayoutPanel1.SetRowSpan(current, 3);
             tableLayoutPanel1.SetColumnSpan(current, 4);
 
         }
@@ -45,6 +47,7 @@ namespace SourceCode
             tableLayoutPanel1.Controls.Remove(current);
             current = new DeleteUser();
             tableLayoutPanel1.Controls.Add(current, 0, 1);
+            tableLayoutPanel1.SetRowSpan(current, 3);
             tableLayoutPanel1.SetColumnSpan(current, 4);
 
         }

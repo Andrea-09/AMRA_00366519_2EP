@@ -38,13 +38,14 @@ namespace SourceCode
                     }
                     else
                     {
-                        ConnectionBD.ExecuteNonQuery($"INSERT INTO APPUSAER (fullname, name, password, userType) " +
+                        ConnectionBD.ExecuteNonQuery($"INSERT INTO APPUSER (fullname, username, password, userType) " +
                                                      $"VALUES ('{textBox1.Text}', " +
                                                      $"'{textBox2.Text}', '{textBox3.Text}' ,'{true}')");
 
+                        MessageBox.Show("Se ha registrado un usuario!");
+
                     }
 
-                    MessageBox.Show("Se ha registrado un usuario!");
 
                 }
                 catch (Exception ex)

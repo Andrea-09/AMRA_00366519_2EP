@@ -33,6 +33,7 @@ namespace SourceCode
                 }
                 else
                 {
+                    
                     string sql = $"UPDATE APPUSER SET password = '{textBox1.Text}' WHERE idUser = {currentUser.IdUser}";
                     ConnectionBD.ExecuteNonQuery(sql);
                     MessageBox.Show("Se ha cambiado su contraseña");

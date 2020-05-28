@@ -10,28 +10,28 @@ using System.Windows.Forms;
 
 namespace SourceCode
 {
-    public partial class AddBusiness : UserControl
+    public partial class AddDir : UserControl
     {
-        public AddBusiness()
+        User currentUser = new User();
+        public AddDir()
         {
             InitializeComponent();
+            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Equals("") || textBox2.Text.Equals(""))
+            if (textBox1.Text.Equals(""))
             {
-                MessageBox.Show("No se pueden dejar campos vacios");
+                MessageBox.Show("Necesita una dirección");
             }
             else
             {
                 try
                 {
-                    ConnectionBD.ExecuteNonQuery($"INSERT INTO BUSINESS(name, description) " +
-                        $"VALUES('{textBox1.Text}', '{textBox2.Text}');");
-
-                    MessageBox.Show("Se ha agregado el negocio");
-
+                    ConnectionBD.ExecuteNonQuery($"INSERT INTO ADDRESS(idUser, address) " +
+                        $"VALUES({currentUser.IdUser}, '{textBox1.Text})");
                 }
                 catch(Exception ex)
                 {
