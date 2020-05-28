@@ -13,13 +13,13 @@ namespace SourceCode
     public partial class AdminWindow : Form
     {
         private UserControl newUser = null;
-        private UserControl newOne = null;
+        
      
         public AdminWindow()
         {
             InitializeComponent();
             newUser = addBusiness1;
-            newOne = addProduct1;
+           
                
            
         }
@@ -45,22 +45,22 @@ namespace SourceCode
 
         private void button3_Click(object sender, EventArgs e)
         {
-            tableLayoutPanel1.Controls.Remove(newOne);
-            newOne = new AddProduct();
-            tableLayoutPanel1.Controls.Add(newOne, 0, 1);
-            tableLayoutPanel1.SetRowSpan(newOne, 2);
-            tableLayoutPanel1.SetColumnSpan(newOne, 3);
+            tableLayoutPanel1.Controls.Remove(newUser);
+            newUser = new AddProduct();
+            tableLayoutPanel1.Controls.Add(newUser, 0, 1);
+            tableLayoutPanel1.SetRowSpan(newUser, 2);
+            tableLayoutPanel1.SetColumnSpan(newUser, 3);
 
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            tableLayoutPanel1.Controls.Remove(newOne);
-            newOne = new DeleteProduct();
-            tableLayoutPanel1.Controls.Add(newOne, 0, 1);
-            tableLayoutPanel1.SetRowSpan(newOne, 2);
-            tableLayoutPanel1.SetColumnSpan(newOne, 3);
+            tableLayoutPanel1.Controls.Remove(newUser);
+            newUser = new  DeleteProduct();
+            tableLayoutPanel1.Controls.Add(newUser, 0, 1);
+            tableLayoutPanel1.SetRowSpan(newUser, 2);
+            tableLayoutPanel1.SetColumnSpan(newUser, 3);
 
 
 
@@ -82,7 +82,7 @@ namespace SourceCode
                 MessageBox.Show("Datos obtenidos exitosamente!");
 
             }
-            catch (Exception exception)
+            catch (Exception ex)
             {
                 MessageBox.Show("Ha ocurrido un problema!");
             }

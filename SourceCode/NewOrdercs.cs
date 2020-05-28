@@ -21,7 +21,9 @@ namespace SourceCode
         {
             PoblarControles1();
             PoblarControles2();
-            
+            PoblarControles3();
+            PoblarControles4();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,11 +36,13 @@ namespace SourceCode
             {
                 try
                 {
-                    string query = $"INSERT INTO APPORDER(createDate, idProduct, idAddress) " +
-                           $"VALUES('{DateTime.Now}', {comboBox2.SelectedValue}, {comboBox1.SelectedValue});";
-                    ConnectionBD.ExecuteNonQuery(query);
+                    DateTime d = DateTime.Now;
+                    ConnectionBD.ExecuteNonQuery($"INSERT INTO APPORDER(createDate, idProduct, idAddress) " +
+                        $"VALUES('{d}', '{comboBox1.SelectedValue}', '{comboBox2.SelectedValue}'); ");
+                    
+                 
 
-                    MessageBox.Show("Se ha realizado su compra");
+                    MessageBox.Show("Se ha procesado su orden");
                 }
 
 
@@ -62,6 +66,22 @@ namespace SourceCode
             comboBox2.ValueMember = "idProduct";
             comboBox2.DisplayMember = "name";
             comboBox1.DataSource = ProductDAO.getLista();
+        }
+
+        private void PoblarControles3()
+        {
+            comboBox2.DataSource = null;
+            comboBox2.ValueMember = "idBusiness";
+            comboBox2.DisplayMember = "name";
+            comboBox1.DataSource = BusinessDAO.getLista();
+        }
+
+        private void PoblarControles4()
+        {
+            comboBox2.DataSource = null;
+            comboBox2.ValueMember = "idOrder";
+            comboBox2.DisplayMember = "idOrder";
+            comboBox1.DataSource = BusinessDAO.getLista();
         }
 
     }
