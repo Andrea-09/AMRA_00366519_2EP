@@ -42,6 +42,7 @@ namespace SourceCode
                 else
                 {
                     ConnectionBD.ExecuteNonQuery($"DELETE FROM ADDRESS WHERE idAddress = '{comboBox1.SelectedValue}'");
+                    PoblarControles();
                     MessageBox.Show("Se ha eliminado la direccion");
                 }
             }

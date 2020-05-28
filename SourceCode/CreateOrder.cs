@@ -30,5 +30,24 @@ namespace SourceCode
             tableLayoutPanel1.SetColumnSpan(usee, 3);
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel1.Controls.Remove(usee);
+            usee = new DeleteOrder();
+            tableLayoutPanel1.Controls.Add(usee, 0, 1);
+            tableLayoutPanel1.SetRowSpan(usee, 2);
+            tableLayoutPanel1.SetColumnSpan(usee, 3);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel1.Controls.Remove(usee);
+            usee = new ViewOrder();
+            tableLayoutPanel1.Controls.Add(usee, 0, 1);
+            tableLayoutPanel1.SetRowSpan(usee, 2);
+            tableLayoutPanel1.SetColumnSpan(usee, 3);
+
+        }
     }
 }

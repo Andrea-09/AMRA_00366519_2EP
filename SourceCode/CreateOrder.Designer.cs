@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.newOrdercs1 = new SourceCode.NewOrdercs();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +55,26 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(674, 395);
             this.tableLayoutPanel1.TabIndex = 0;
-            
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(451, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(148, 58);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Visualizar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(227, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(148, 58);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Eliminar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -68,30 +87,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(227, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 58);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Eliminar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(451, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(148, 58);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Visualizar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // newOrdercs1
             // 
             this.newOrdercs1.BackColor = System.Drawing.Color.DarkViolet;
             this.tableLayoutPanel1.SetColumnSpan(this.newOrdercs1, 3);
             this.newOrdercs1.Location = new System.Drawing.Point(5, 82);
-            this.newOrdercs1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.newOrdercs1.Margin = new System.Windows.Forms.Padding(5);
             this.newOrdercs1.Name = "newOrdercs1";
             this.tableLayoutPanel1.SetRowSpan(this.newOrdercs1, 2);
             this.newOrdercs1.Size = new System.Drawing.Size(664, 308);
