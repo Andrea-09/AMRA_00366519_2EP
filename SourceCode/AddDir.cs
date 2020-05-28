@@ -16,6 +16,7 @@ namespace SourceCode
         public AddDir()
         {
             InitializeComponent();
+            //currentUser = use;
             
 
         }
@@ -38,6 +39,15 @@ namespace SourceCode
                     MessageBox.Show("Ha ocurrido un error");
                 }
             }
+        }
+
+        private int PoblarId()
+        {
+            var dt = ConnectionBD.ExecuteQuery("SELECT iduser FROM appuser WHERE username='{us}'");
+            var dri = dt.Rows[0];
+            string auxstr = dri[0].ToString();
+            int auxid = Convert.ToInt16(auxstr);
+            return auxid;
         }
     }
 }

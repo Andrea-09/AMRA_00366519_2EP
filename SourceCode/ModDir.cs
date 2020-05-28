@@ -44,6 +44,8 @@ namespace SourceCode
                     ConnectionBD.ExecuteNonQuery($"UPDATE ADDRESS SET address = '{textBox1.Text}' " +
                         $"WHERE idAddress = {comboBox1.SelectedValue}");
 
+                    MessageBox.Show("Se ha modificado la direccion");
+
                 }
                 catch(Exception ex)
                 {

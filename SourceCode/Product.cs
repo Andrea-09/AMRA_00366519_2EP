@@ -16,6 +16,13 @@ namespace SourceCode
         {
         }
 
+        public Product(int idProduct, int idBusiness, string name)
+        {
+            this.idProduct = idProduct;
+            this.idBusiness = idBusiness;
+            this.name = name;
+        }
+
         public int IdProduct
         {
             get => idProduct;

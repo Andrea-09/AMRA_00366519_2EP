@@ -13,11 +13,13 @@ namespace SourceCode
     public partial class UserWindow : Form
     {
         private UserControl us = null;
+        
         public UserWindow()
         {
             InitializeComponent();
 
             us = addDir1;
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,5 +51,12 @@ namespace SourceCode
             tableLayoutPanel1.SetColumnSpan(us, 3);
 
         }
+
+        
+        }
+
+      
+
+        
     }
-}
+

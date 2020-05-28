@@ -18,6 +18,14 @@ namespace SourceCode
         {
         }
 
+        public Pedido(int idOrder, DateTime createDate, int idProduct, int idAddress)
+        {
+            this.idOrder = idOrder;
+            this.createDate = createDate;
+            this.idProduct = idProduct;
+            this.idAddress = idAddress;
+        }
+
         public int IdOrder
         {
             get => idOrder;

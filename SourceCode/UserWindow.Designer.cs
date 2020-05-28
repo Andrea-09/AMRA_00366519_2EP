@@ -30,16 +30,20 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.addDir1 = new SourceCode.AddDir();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.addDir1 = new SourceCode.AddDir();
+            this.chanPsUser1 = new SourceCode.ChanPsUser();
+            this.createOrder1 = new SourceCode.CreateOrder();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -64,25 +68,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Direcciones";
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(781, 414);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Ordenes";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(781, 414);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Contraseña";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
@@ -101,17 +86,17 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(763, 393);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // button1
+            // button3
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(248, 57);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Crear";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(511, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(249, 56);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -119,33 +104,70 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(257, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(248, 57);
+            this.button2.Size = new System.Drawing.Size(248, 56);
             this.button2.TabIndex = 1;
             this.button2.Text = "Modificar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // button1
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(511, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(249, 57);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(248, 56);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Crear";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // addDir1
             // 
             this.addDir1.BackColor = System.Drawing.Color.BlueViolet;
             this.tableLayoutPanel1.SetColumnSpan(this.addDir1, 3);
             this.addDir1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addDir1.Location = new System.Drawing.Point(3, 66);
+            this.addDir1.Location = new System.Drawing.Point(3, 65);
             this.addDir1.Name = "addDir1";
-            this.addDir1.Size = new System.Drawing.Size(757, 324);
+            this.addDir1.Size = new System.Drawing.Size(757, 325);
             this.addDir1.TabIndex = 3;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.createOrder1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(781, 414);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Ordenes";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.DarkOrchid;
+            this.tabPage3.Controls.Add(this.chanPsUser1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(781, 414);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Contraseña";
+            // 
+            // chanPsUser1
+            // 
+            this.chanPsUser1.BackColor = System.Drawing.Color.DarkViolet;
+            this.chanPsUser1.Location = new System.Drawing.Point(12, 10);
+            this.chanPsUser1.Name = "chanPsUser1";
+            this.chanPsUser1.Size = new System.Drawing.Size(752, 387);
+            this.chanPsUser1.TabIndex = 0;
+            // 
+            // createOrder1
+            // 
+            this.createOrder1.BackColor = System.Drawing.Color.DarkViolet;
+            this.createOrder1.Location = new System.Drawing.Point(0, 0);
+            this.createOrder1.Name = "createOrder1";
+            this.createOrder1.Size = new System.Drawing.Size(770, 401);
+            this.createOrder1.TabIndex = 0;
             // 
             // UserWindow
             // 
@@ -158,6 +180,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -173,5 +197,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private AddDir addDir1;
+        private ChanPsUser chanPsUser1;
+        private CreateOrder createOrder1;
     }
 }

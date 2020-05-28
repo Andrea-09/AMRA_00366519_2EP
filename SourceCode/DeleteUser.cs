@@ -21,13 +21,13 @@ namespace SourceCode
         {
             try
             {
-                string query = $"SELECT idUser FROM APPUSER WHERE username = '{comboBox1.SelectedItem.ToString()}'";
+                string query = $"SELECT idUser FROM APPUSER WHERE username = '{comboBox1.SelectedItem}'";
 
                 var dt = ConnectionBD.ExecuteQuery(query);
                 var dr = dt.Rows[0];
                 var idUsuario = Convert.ToInt32(dr[0].ToString());
 
-                string nonQuery = $"DELETE FROM APPUSER WHERE idUser ='{comboBox1.SelectedValue}'";
+                string nonQuery = $"DELETE FROM APPUSER WHERE idUser = {idUsuario}";
 
                 ConnectionBD.ExecuteNonQuery(nonQuery);
 

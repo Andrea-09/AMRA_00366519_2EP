@@ -16,19 +16,15 @@ namespace SourceCode
 
         public User()
         {
-            fullName = "";
-            userName = "";
-            password = "";
-            userType = false;
         }
 
-        public User(User use)
+        public User(int idUser, string fullName, string userName, string password, bool userType)
         {
-            idUser = -1;
-            fullName = "";
-            userName = "";
-            password = "";
-            userType = false;
+            this.idUser = idUser;
+            this.fullName = fullName;
+            this.userName = userName;
+            this.password = password;
+            this.userType = userType;
         }
 
 

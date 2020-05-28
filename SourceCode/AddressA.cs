@@ -16,6 +16,13 @@ namespace SourceCode
         {
         }
 
+        public AddressA(int idAddress, int idUser, string address)
+        {
+            this.idAddress = idAddress;
+            this.idUser = idUser;
+            this.address = address;
+        }
+
         public int IdAddress
         {
             get => idAddress;

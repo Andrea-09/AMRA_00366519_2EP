@@ -79,6 +79,9 @@ C:\Users\Usuario\Documents\Workspaces POO\Parcial 02\AMRA_00366519_2EP\SourceCod
 C:\Users\Usuario\Documents\Workspaces POO\Parcial 02\AMRA_00366519_2EP\SourceCode\obj\Debug\SourceCode.csproj.CopyComplete
 C:\Users\Usuario\Documents\Workspaces POO\Parcial 02\AMRA_00366519_2EP\SourceCode\obj\Debug\SourceCode.exe
 C:\Users\Usuario\Documents\Workspaces POO\Parcial 02\AMRA_00366519_2EP\SourceCode\obj\Debug\SourceCode.pdb
-C:\Users\Usuario\Documents\Workspaces POO\Parcial 02\AMRA_00366519_2EP\SourceCode\obj\Debug\SourceCode.csprojAssemblyReference.cache
 C:\Users\Usuario\Documents\Workspaces POO\Parcial 02\AMRA_00366519_2EP\SourceCode\obj\Debug\SourceCode.DeleteDir.resources
 C:\Users\Usuario\Documents\Workspaces POO\Parcial 02\AMRA_00366519_2EP\SourceCode\obj\Debug\SourceCode.ModDir.resources
+C:\Users\Usuario\Documents\Workspaces POO\Parcial 02\AMRA_00366519_2EP\SourceCode\obj\Debug\SourceCode.ChanPsUser.resources
+C:\Users\Usuario\Documents\Workspaces POO\Parcial 02\AMRA_00366519_2EP\SourceCode\obj\Debug\SourceCode.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\Workspaces POO\Parcial 02\AMRA_00366519_2EP\SourceCode\obj\Debug\SourceCode.CreateOrder.resources
+C:\Users\Usuario\Documents\Workspaces POO\Parcial 02\AMRA_00366519_2EP\SourceCode\obj\Debug\SourceCode.NewOrdercs.resources

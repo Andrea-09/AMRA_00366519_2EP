@@ -10,22 +10,33 @@ using System.Windows.Forms;
 
 namespace SourceCode
 {
-    public partial class ChangePssw : UserControl
+    public partial class ChanPsUser : UserControl
     {
-        User currentUser = new User();
-
-
-
-        public ChangePssw(User use)
+        public ChanPsUser()
         {
             InitializeComponent();
-            currentUser = use;
-
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void ChanPsUser_Load(object sender, EventArgs e)
         {
-            
+            PoblarControles();
+        }
+
+        private void PoblarControles()
+        {
+            var users = ConnectionBD.ExecuteQuery("SELECT username FROM appuser");
+            var usersNames = new List<string>();
+
+            foreach (DataRow dr in users.Rows)
+            {
+                usersNames.Add(dr[0].ToString());
+            }
+
+            comboBox1.DataSource = usersNames;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             if (textBox1.Text.Equals(""))
             {
                 MessageBox.Show("Debe cambiar la contraseña");
@@ -54,30 +65,7 @@ namespace SourceCode
                 {
                     MessageBox.Show("Ha ocurrido un error");
                 }
-
-            }
-        }
-
-
-
-            private void PoblarControles()
-            {
-            var users = ConnectionBD.ExecuteQuery("SELECT username FROM appuser");
-            var usersNames = new List<string>();
-
-            foreach (DataRow dr in users.Rows)
-            {
-                usersNames.Add(dr[0].ToString());
-            }
-
-                comboBox1.DataSource = usersNames;
-            }
-
-            private void ChangePssw_Load(object sender, EventArgs e)
-            {
-                PoblarControles();
-           
             }
         }
     }
-
+}

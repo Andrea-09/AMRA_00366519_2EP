@@ -105,6 +105,18 @@
     <Compile Include="ChangePssw.Designer.cs">
       <DependentUpon>ChangePssw.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChanPsUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChanPsUser.Designer.cs">
+      <DependentUpon>ChanPsUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateOrder.Designer.cs">
+      <DependentUpon>CreateOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -140,6 +152,12 @@
     </Compile>
     <Compile Include="ModDir.Designer.cs">
       <DependentUpon>ModDir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewOrdercs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewOrdercs.Designer.cs">
+      <DependentUpon>NewOrdercs.cs</DependentUpon>
     </Compile>
     <Compile Include="NoRestaurantSelected.cs" />
     <Compile Include="Pedido.cs" />
@@ -187,6 +205,12 @@
     <EmbeddedResource Include="ChangePssw.resx">
       <DependentUpon>ChangePssw.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChanPsUser.resx">
+      <DependentUpon>ChanPsUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateOrder.resx">
+      <DependentUpon>CreateOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateUser.resx">
       <DependentUpon>CreateUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModDir.resx">
       <DependentUpon>ModDir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewOrdercs.resx">
+      <DependentUpon>NewOrdercs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserAdmin.resx">
       <DependentUpon>UserAdmin.cs</DependentUpon>
