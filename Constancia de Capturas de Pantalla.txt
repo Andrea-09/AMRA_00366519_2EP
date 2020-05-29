@@ -1,0 +1,9 @@
+Debido a que Visual Studio, por motivos propios del IDE, 
+borró líneas de código de mi programa en el designer o 
+se buggeaba solo durante las ejecuciones de prueba, no me
+fue posible tomar todas las capturas solicitadas en la entrega.
+
+Por lo que hablé con el instructor Walter Morales y me 
+permitió mandar un archivo de texto explicando la situación
+por la cual las capturas de pantalla no están completas
+en la carpeta. Gracias por la comprensión.

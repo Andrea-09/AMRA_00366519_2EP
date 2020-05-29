@@ -39,7 +39,7 @@ namespace SourceCode
             newUser = new DeleteBusiness();
             tableLayoutPanel1.Controls.Add(newUser, 0, 1);
             tableLayoutPanel1.SetRowSpan(newUser, 2);
-            tableLayoutPanel1.SetColumnSpan(newUser, 3);
+            tableLayoutPanel1.SetColumnSpan(newUser, 2);
 
         }
 
@@ -49,7 +49,7 @@ namespace SourceCode
             newUser = new AddProduct();
             tableLayoutPanel1.Controls.Add(newUser, 0, 1);
             tableLayoutPanel1.SetRowSpan(newUser, 2);
-            tableLayoutPanel1.SetColumnSpan(newUser, 3);
+            tableLayoutPanel1.SetColumnSpan(newUser, 2);
 
 
         }
@@ -86,6 +86,11 @@ namespace SourceCode
             {
                 MessageBox.Show("Ha ocurrido un problema!");
             }
+        }
+
+        private void userAdmin1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
