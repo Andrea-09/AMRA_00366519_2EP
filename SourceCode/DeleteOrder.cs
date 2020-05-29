@@ -12,9 +12,13 @@ namespace SourceCode
 {
     public partial class DeleteOrder : UserControl
     {
+        private User logged;
+
+
         public DeleteOrder()
         {
             InitializeComponent();
+           
         }
 
         private void DeleteOrder_Load(object sender, EventArgs e)

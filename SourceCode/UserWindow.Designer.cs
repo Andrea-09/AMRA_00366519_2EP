@@ -38,10 +38,11 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.addDir1 = new SourceCode.AddDir();
-            this.createOrder1 = new SourceCode.CreateOrder();
+            
             this.chanPsUser1 = new SourceCode.ChanPsUser();
             this.viewOrder1 = new SourceCode.ViewOrder();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.addDir1 = new SourceCode.AddDir();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -49,6 +50,7 @@
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -83,7 +85,7 @@
             this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.addDir1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 11);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
@@ -174,18 +176,9 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(781, 414);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // addDir1
-            // 
-            this.addDir1.BackColor = System.Drawing.Color.BlueViolet;
-            this.tableLayoutPanel1.SetColumnSpan(this.addDir1, 3);
-            this.addDir1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addDir1.Location = new System.Drawing.Point(3, 65);
-            this.addDir1.Name = "addDir1";
-            this.addDir1.Size = new System.Drawing.Size(757, 325);
-            this.addDir1.TabIndex = 3;
-            // 
             // createOrder1
             // 
+            
             this.createOrder1.BackColor = System.Drawing.Color.DarkViolet;
             this.createOrder1.Location = new System.Drawing.Point(0, 0);
             this.createOrder1.Name = "createOrder1";
@@ -212,6 +205,33 @@
             this.viewOrder1.TabIndex = 0;
             this.viewOrder1.Load += new System.EventHandler(this.viewOrder1_Load);
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel3, 3);
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.addDir1, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 65);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(757, 325);
+            this.tableLayoutPanel3.TabIndex = 3;
+            // 
+            // addDir1
+            // 
+            this.addDir1.BackColor = System.Drawing.Color.BlueViolet;
+            this.tableLayoutPanel3.SetColumnSpan(this.addDir1, 2);
+            this.addDir1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addDir1.Location = new System.Drawing.Point(3, 3);
+            this.addDir1.Name = "addDir1";
+            this.tableLayoutPanel3.SetRowSpan(this.addDir1, 2);
+            this.addDir1.Size = new System.Drawing.Size(751, 319);
+            this.addDir1.TabIndex = 0;
+            // 
             // UserWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,6 +247,7 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -241,11 +262,12 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private AddDir addDir1;
         private ChanPsUser chanPsUser1;
         private CreateOrder createOrder1;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private ViewOrder viewOrder1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private AddDir addDir1;
     }
 }

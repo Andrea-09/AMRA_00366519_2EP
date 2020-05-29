@@ -17,7 +17,7 @@ namespace SourceCode
 
         public AddDir()
         {
-            InitializeComponent();
+            
             //currentUser = use;
             
 
@@ -25,6 +25,7 @@ namespace SourceCode
 
         public AddDir(User logged)
         {
+            InitializeComponent();
             this.logged = logged;
         }
 
@@ -39,7 +40,9 @@ namespace SourceCode
                 try
                 {
                     ConnectionBD.ExecuteNonQuery($"INSERT INTO ADDRESS(idUser, address) " +
-                        $"VALUES({currentUser.IdUser}, '{textBox1.Text})");
+                        $"VALUES('{logged.IdUser}', '{textBox1.Text}')");
+
+                    MessageBox.Show("Se ha agregado la direccion");
                 }
                 catch(Exception ex)
                 {
@@ -48,13 +51,5 @@ namespace SourceCode
             }
         }
 
-        private int PoblarId()
-        {
-            var dt = ConnectionBD.ExecuteQuery("SELECT iduser FROM appuser WHERE username='{us}'");
-            var dri = dt.Rows[0];
-            string auxstr = dri[0].ToString();
-            int auxid = Convert.ToInt16(auxstr);
-            return auxid;
-        }
     }
 }

@@ -12,17 +12,20 @@ namespace SourceCode
 {
     public partial class NewOrdercs : UserControl
     {
+        private User logged;
+
         public NewOrdercs()
         {
             InitializeComponent();
+
         }
 
         private void NewOrdercs_Load(object sender, EventArgs e)
         {
             PoblarControles1();
             PoblarControles2();
-            PoblarControles3();
-            PoblarControles4();
+            //PoblarControles3();
+            //PoblarControles4();
 
         }
 
@@ -52,23 +55,23 @@ namespace SourceCode
                 }
             }
             }
-        private void PoblarControles1()
-        {
-            comboBox1.DataSource = null;
-            comboBox1.ValueMember = "idAddress";
-            comboBox1.DisplayMember = "address";
-            comboBox1.DataSource = AddressDAO.getLista();
-        }
-
         private void PoblarControles2()
         {
             comboBox2.DataSource = null;
-            comboBox2.ValueMember = "idProduct";
-            comboBox2.DisplayMember = "name";
+            comboBox2.ValueMember = "idAddress";
+            comboBox2.DisplayMember = "address";
+            comboBox2.DataSource = AddressDAO.getLista();
+        }
+
+        private void PoblarControles1()
+        {
+            comboBox1.DataSource = null;
+            comboBox1.ValueMember = "idProduct";
+            comboBox1.DisplayMember = "name";
             comboBox1.DataSource = ProductDAO.getLista();
         }
 
-        private void PoblarControles3()
+       /* private void PoblarControles3()
         {
             comboBox2.DataSource = null;
             comboBox2.ValueMember = "idBusiness";
@@ -81,8 +84,8 @@ namespace SourceCode
             comboBox2.DataSource = null;
             comboBox2.ValueMember = "idOrder";
             comboBox2.DisplayMember = "idOrder";
-            comboBox1.DataSource = BusinessDAO.getLista();
-        }
+            comboBox1.DataSource = PedidoDAO.getLista();
+        }*/
 
     }
 

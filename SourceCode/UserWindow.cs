@@ -39,31 +39,32 @@ namespace SourceCode
         private void button1_Click(object sender, EventArgs e)
         {
 
-            tableLayoutPanel1.Controls.Remove(us);
+            tableLayoutPanel3.Controls.Remove(us);
             us = new AddDir(Logged);
-            tableLayoutPanel1.Controls.Add(us, 0, 1);
-            tableLayoutPanel1.SetRowSpan(us, 2);
-            tableLayoutPanel1.SetColumnSpan(us, 3);
+            tableLayoutPanel3.Controls.Add(us, 0, 0);
+            tableLayoutPanel3.SetRowSpan(us, 2);
+            tableLayoutPanel3.SetColumnSpan(us, 2);
+            
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            tableLayoutPanel1.Controls.Remove(us);
+            tableLayoutPanel3.Controls.Remove(us);
             us = new ModDir(Logged);
-            tableLayoutPanel1.Controls.Add(us, 0, 1);
-            tableLayoutPanel1.SetRowSpan(us, 2);
-            tableLayoutPanel1.SetColumnSpan(us, 3);
+            tableLayoutPanel3.Controls.Add(us, 0, 0);
+            tableLayoutPanel3.SetRowSpan(us, 2);
+            tableLayoutPanel3.SetColumnSpan(us, 2);
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            tableLayoutPanel1.Controls.Remove(us);
+            tableLayoutPanel3.Controls.Remove(us);
             us = new DeleteDir(Logged);
-            tableLayoutPanel1.Controls.Add(us, 0, 1);
-            tableLayoutPanel1.SetRowSpan(us, 2);
-            tableLayoutPanel1.SetColumnSpan(us, 3);
+            tableLayoutPanel3.Controls.Add(us, 0, 0);
+            tableLayoutPanel3.SetRowSpan(us, 2);
+            tableLayoutPanel3.SetColumnSpan(us, 2);
 
         }
 

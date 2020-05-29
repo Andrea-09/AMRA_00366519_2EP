@@ -12,14 +12,24 @@ namespace SourceCode
 {
     public partial class CreateOrder : UserControl
     {
+        
+        User Logged = new User();
         private UserControl usee = null;
-        public CreateOrder()
+
+        public CreateOrder(User usu)
         {
             InitializeComponent();
             usee = newOrdercs1;
+            
+        }
+        public CreateOrder()
+        {
+            
+
         }
 
-        
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -50,6 +60,9 @@ namespace SourceCode
 
         }
 
-       
+        private void newOrdercs1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

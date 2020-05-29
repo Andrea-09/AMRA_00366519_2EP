@@ -16,11 +16,12 @@ namespace SourceCode
 
         public DeleteDir()
         {
-            InitializeComponent();
+            
         }
 
         public DeleteDir(User logged)
         {
+            InitializeComponent();
             this.logged = logged;
         }
 

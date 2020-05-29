@@ -16,11 +16,12 @@ namespace SourceCode
 
         public ModDir()
         {
-            InitializeComponent();
+            
         }
 
         public ModDir(User logged)
         {
+            InitializeComponent();
             this.logged = logged;
         }
 

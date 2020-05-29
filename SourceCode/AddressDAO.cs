@@ -21,7 +21,7 @@ namespace SourceCode
                 AddressA ad = new AddressA();
                 ad.IdAddress = Convert.ToInt32(fila[0].ToString());
                 ad.IdUser = Convert.ToInt32(fila[1].ToString());
-                ad.Address= fila[1].ToString();
+                ad.Address= fila[2].ToString();
             
 
 

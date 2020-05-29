@@ -97,12 +97,13 @@
             this.tableLayoutPanel1.SetRowSpan(this.newOrdercs1, 2);
             this.newOrdercs1.Size = new System.Drawing.Size(664, 308);
             this.newOrdercs1.TabIndex = 3;
+            this.newOrdercs1.Load += new System.EventHandler(this.newOrdercs1_Load);
             // 
             // CreateOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkViolet;
+            this.BackColor = System.Drawing.Color.MediumOrchid;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "CreateOrder";
             this.Size = new System.Drawing.Size(706, 423);
