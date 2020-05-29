@@ -13,12 +13,19 @@ namespace SourceCode
     public partial class AddDir : UserControl
     {
         User currentUser = new User();
+        private User logged;
+
         public AddDir()
         {
             InitializeComponent();
             //currentUser = use;
             
 
+        }
+
+        public AddDir(User logged)
+        {
+            this.logged = logged;
         }
 
         private void button1_Click(object sender, EventArgs e)

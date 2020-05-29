@@ -12,7 +12,6 @@ namespace SourceCode
 {
     public partial class Form1 : Form
     {
-
         public Form1()
         {
             InitializeComponent();
@@ -42,7 +41,7 @@ namespace SourceCode
                     }
                     else
                     {
-                        UserWindow u = new UserWindow();
+                        UserWindow u = new UserWindow(use);
                         u.Show();
                         Hide();
                     }

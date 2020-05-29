@@ -12,9 +12,16 @@ namespace SourceCode
 {
     public partial class DeleteDir : UserControl
     {
+        private User logged;
+
         public DeleteDir()
         {
             InitializeComponent();
+        }
+
+        public DeleteDir(User logged)
+        {
+            this.logged = logged;
         }
 
         private void DeleteDir_Load(object sender, EventArgs e)

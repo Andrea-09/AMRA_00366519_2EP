@@ -71,8 +71,8 @@ namespace SourceCode
         {
             try
             {
-                var dt = ConnectionBD.ExecuteQuery($"SELECT ao.idOrder, ao.createDate, pr.name, au.fullname, ad.address" +
-                    $"FROM APPORDER ao, ADDRESS ad, PRODUCT pr, APPUSER au" +
+                var dt = ConnectionBD.ExecuteQuery($"SELECT ao.idOrder, ao.createDate, pr.name, au.fullname, ad.address " +
+                    $"FROM APPORDER ao, ADDRESS ad, PRODUCT pr, APPUSER au " +
                     $"WHERE ao.idProduct = pr.idProduct " +
                     $"AND ao.idAddress = ad.idAddress " +
                     $"AND ad.idUser = au.idUser; ");

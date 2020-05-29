@@ -12,9 +12,16 @@ namespace SourceCode
 {
     public partial class ModDir : UserControl
     {
+        private User logged;
+
         public ModDir()
         {
             InitializeComponent();
+        }
+
+        public ModDir(User logged)
+        {
+            this.logged = logged;
         }
 
         private void ModDir_Load(object sender, EventArgs e)
